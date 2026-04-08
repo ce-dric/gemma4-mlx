@@ -2,7 +2,7 @@
 
 이 문서는 Apple Silicon Mac에서 MLX로 Gemma 4 E2B를 실행하는 최소 구성 안내입니다.
 
-영문 기본 문서는 [README.md](/Users/cedric/Documents/gemma/README.md)에서 볼 수 있습니다.
+영문 기본 문서는 [README.md](./README.md)에서 볼 수 있습니다.
 
 ## 왜 이 저장소는 MLX를 쓰는가
 
@@ -18,22 +18,23 @@
 ## 빠른 시작
 
 ```bash
-cd /Users/cedric/Documents/gemma
+git clone git@github.com:ce-dric/gemma4-mlx.git
+cd gemma4-mlx
 ./setup_env.sh
 ./run_gemma4.sh "서울을 한 문장으로 소개해줘."
 ```
 
 ## 파일 구성
 
-- [`setup_env.sh`](/Users/cedric/Documents/gemma/setup_env.sh): 가상환경 생성 및 의존성 설치
-- [`run_gemma4.sh`](/Users/cedric/Documents/gemma/run_gemma4.sh): 빠른 실행용 셸 래퍼
-- [`run_gemma4.py`](/Users/cedric/Documents/gemma/run_gemma4.py): Python 추론 실행기
-- [`AGENT_CONTEXT.md`](/Users/cedric/Documents/gemma/AGENT_CONTEXT.md): 에이전트용 영문 작업 문서
+- [`setup_env.sh`](./setup_env.sh): 가상환경 생성 및 의존성 설치
+- [`run_gemma4.sh`](./run_gemma4.sh): 빠른 실행용 셸 래퍼
+- [`run_gemma4.py`](./run_gemma4.py): Python 추론 실행기
+- [`AGENT_CONTEXT.md`](./AGENT_CONTEXT.md): 에이전트용 영문 작업 문서
 
 ## 환경 설정
 
 ```bash
-cd /Users/cedric/Documents/gemma
+cd gemma4-mlx
 ./setup_env.sh
 ```
 
@@ -53,21 +54,21 @@ GitHub 버전을 쓰는 이유:
 기본 실행:
 
 ```bash
-cd /Users/cedric/Documents/gemma
+cd gemma4-mlx
 ./run_gemma4.sh "서울을 한 문장으로 소개해줘."
 ```
 
 temperature를 높여 더 랜덤하게 실행:
 
 ```bash
-cd /Users/cedric/Documents/gemma
+cd gemma4-mlx
 ./run_gemma4.sh --temp 1.0 "서울을 한 문장으로 소개해줘."
 ```
 
 temperature를 낮춰 더 안정적으로 실행:
 
 ```bash
-cd /Users/cedric/Documents/gemma
+cd gemma4-mlx
 ./run_gemma4.sh --temp 0.2 "서울을 한 문장으로 소개해줘."
 ```
 

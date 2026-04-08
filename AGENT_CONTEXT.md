@@ -22,11 +22,11 @@ This repository is a minimal, reproducible setup for running Gemma 4 E2B locally
 
 ## Repository Files
 
-- [`README.md`](/Users/cedric/Documents/gemma/README.md): primary English documentation
-- [`README.ko.md`](/Users/cedric/Documents/gemma/README.ko.md): Korean documentation
-- [`setup_env.sh`](/Users/cedric/Documents/gemma/setup_env.sh): environment bootstrap script
-- [`run_gemma4.sh`](/Users/cedric/Documents/gemma/run_gemma4.sh): shell entry point
-- [`run_gemma4.py`](/Users/cedric/Documents/gemma/run_gemma4.py): Python inference entry point
+- [`README.md`](./README.md): primary English documentation
+- [`README.ko.md`](./README.ko.md): Korean documentation
+- [`setup_env.sh`](./setup_env.sh): environment bootstrap script
+- [`run_gemma4.sh`](./run_gemma4.sh): shell entry point
+- [`run_gemma4.py`](./run_gemma4.py): Python inference entry point
 
 ## Working Rules
 

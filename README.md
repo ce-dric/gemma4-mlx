@@ -2,7 +2,7 @@
 
 Minimal local setup for running Gemma 4 E2B on Apple Silicon Macs with MLX.
 
-For Korean documentation, see [README.ko.md](/Users/cedric/Documents/gemma/README.ko.md).
+For Korean documentation, see [README.ko.md](./README.ko.md).
 
 ## Why this repo uses MLX
 
@@ -18,23 +18,24 @@ References:
 ## Quick Start
 
 ```bash
-cd /Users/cedric/Documents/gemma
+git clone git@github.com:ce-dric/gemma4-mlx.git
+cd gemma4-mlx
 ./setup_env.sh
 ./run_gemma4.sh "Describe Seoul in one sentence."
 ```
 
 ## Files
 
-- [`setup_env.sh`](/Users/cedric/Documents/gemma/setup_env.sh): creates the virtual environment and installs dependencies
-- [`run_gemma4.sh`](/Users/cedric/Documents/gemma/run_gemma4.sh): shell wrapper for quick execution
-- [`run_gemma4.py`](/Users/cedric/Documents/gemma/run_gemma4.py): Python entry point for inference
-- [`README.ko.md`](/Users/cedric/Documents/gemma/README.ko.md): Korean version of this guide
-- [`AGENT_CONTEXT.md`](/Users/cedric/Documents/gemma/AGENT_CONTEXT.md): agent-facing workspace notes
+- [`setup_env.sh`](./setup_env.sh): creates the virtual environment and installs dependencies
+- [`run_gemma4.sh`](./run_gemma4.sh): shell wrapper for quick execution
+- [`run_gemma4.py`](./run_gemma4.py): Python entry point for inference
+- [`README.ko.md`](./README.ko.md): Korean version of this guide
+- [`AGENT_CONTEXT.md`](./AGENT_CONTEXT.md): agent-facing workspace notes
 
 ## Environment Setup
 
 ```bash
-cd /Users/cedric/Documents/gemma
+cd gemma4-mlx
 ./setup_env.sh
 ```
 
@@ -54,21 +55,21 @@ Why install from GitHub instead of PyPI:
 Default run:
 
 ```bash
-cd /Users/cedric/Documents/gemma
+cd gemma4-mlx
 ./run_gemma4.sh "Introduce yourself in one sentence."
 ```
 
 Run with a custom temperature:
 
 ```bash
-cd /Users/cedric/Documents/gemma
+cd gemma4-mlx
 ./run_gemma4.sh --temp 1.0 "Describe Seoul in one sentence."
 ```
 
 Run with a lower temperature for more stable output:
 
 ```bash
-cd /Users/cedric/Documents/gemma
+cd gemma4-mlx
 ./run_gemma4.sh --temp 0.2 "Describe Seoul in one sentence."
 ```
 
